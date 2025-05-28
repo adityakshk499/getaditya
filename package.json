@@ -4,8 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "npx @remix-run/dev vite:build",
-    "dev": "node ./scripts/dev.cjs && npx @remix-run/dev vite:dev",
-    "prepare": "node ./scripts/draco.cjs"
+    "dev": "node ./scripts/dev.cjs && npx @remix-run/dev vite:dev"
   },
   "dependencies": {
     "@aws-sdk/client-ses": "^3.515.0",
