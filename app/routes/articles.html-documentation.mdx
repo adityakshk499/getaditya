@@ -1,0 +1,205 @@
+---
+title: 'HTML Documentation Guide'
+author: 'Aditya Kaushik'
+date: '2025-05-23'
+abstract: This guide provides a comprehensive overview of HTML, including its structure, elements, attributes, and best practices for modern web development.
+banner: /static/hello-world-banner.jpg
+---
+
+## Introduction
+
+This documentation serves as a complete guide to writing and understanding HTML (HyperText Markup Language). It starts from creating your first HTML file and spans across formatting, embedding content, using semantic tags, and improving accessibility and SEO.
+
+## Getting Started
+
+To create your first HTML file:
+
+1. Create a new folder anywhere on your system.
+2. Open it in Visual Studio Code.
+3. Create a file with a `.html` extension (e.g., `index.html`).
+4. Use the `.html` extension to denote that this is an HTML document.
+
+## Basic HTML Structure
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Page content goes here -->
+  </body>
+</html>
+```
+
+## Elements and Attributes
+
+- Tags are enclosed within angle brackets: `<tagname>content</tagname>`.
+- Some tags are self-closing, e.g., `<img src="" alt="">`.
+- Attributes provide additional information: `<element attribute="value">`.
+
+## Indentation and Comments
+
+Maintain consistent indentation (2 or 4 spaces). Use comments to clarify code:
+
+```html
+<!-- This is a single-line comment -->
+<!--
+  This is a
+  multi-line comment
+-->
+```
+
+## Headings
+
+Use heading tags `<h1>` to `<h6>` to define headings by importance.
+
+## Paragraph and Preformatted Text
+
+- `<p>` defines a paragraph.
+- `<pre>` retains whitespace and line breaks.
+
+## Text Formatting Tags
+
+- Bold: `<b>` or `<strong>`
+- Italic: `<i>` or `<em>`
+- Underline: `<u>`
+- Strikethrough: `<s>`
+- Superscript: `<sup>` and Subscript: `<sub>`
+- Blockquote: `<blockquote>`
+
+## Links
+
+```html
+<a href="https://example.com">Visit Example</a>
+<a href="mailto:email@example.com">Send Email</a>
+<a href="#section">Jump to Section</a>
+```
+
+## Images
+
+```html
+<img src="path/to/image.jpg" alt="Description" width="300" height="200" />
+<figure>
+  <img src="cat.jpg" alt="Cat" />
+  <figcaption>A cat</figcaption>
+</figure>
+```
+
+## Lists
+
+### Ordered List
+
+```html
+<ol>
+  <li>Item 1</li>
+</ol>
+```
+
+### Unordered List
+
+```html
+<ul>
+  <li>Item 1</li>
+</ul>
+```
+
+## Tables
+
+```html
+<table border="1">
+  <tr>
+    <th>Header</th>
+  </tr>
+  <tr>
+    <td>Data</td>
+  </tr>
+</table>
+```
+
+## Div and Span
+
+- `<div>`: block container
+- `<span>`: inline container
+
+## Block vs Inline Elements
+
+Block elements (e.g., `<div>`) occupy full width; inline elements (e.g., `<a>`, `<span>`) do not.
+
+## Embedding Content
+
+### Iframe
+
+```html
+<iframe src="url" width="560" height="315"></iframe>
+```
+
+### Audio
+
+```html
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg" />
+</audio>
+```
+
+### Video
+
+```html
+<video controls>
+  <source src="video.mp4" type="video/mp4" />
+</video>
+```
+
+### PDF
+
+```html
+<embed src="document.pdf" type="application/pdf" width="500" height="600" />
+```
+
+## Forms and Inputs
+
+```html
+<form action="submit.php" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required />
+  <input type="submit" value="Submit" />
+</form>
+```
+
+## SEO and Meta Tags
+
+- Title: `<title>Page Title</title>`
+- Description: `<meta name="description" content="Page description">`
+- Viewport: `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+- Canonical: `<link rel="canonical" href="https://example.com">`
+
+## Accessibility & Semantic Tags
+
+Use semantic elements like `<header>`, `<nav>`, `<main>`, `<article>`, `<footer>`, etc., for better structure and SEO.
+
+## Favicon
+
+```html
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+```
+
+## Scripts and Fallbacks
+
+```html
+<script>
+  alert('Hello, world!');
+</script>
+<noscript>
+  <p>Please enable JavaScript to view this site properly.</p>
+</noscript>
+```
+
+## Right-to-Left (RTL) Language Support
+
+Use `dir="rtl"` and ensure appropriate alignment and fonts for RTL languages like Arabic or Hebrew.
+
+This guide aims to equip you with a solid understanding of HTML essentials, best practices, and modern standards.

@@ -1,0 +1,281 @@
+---
+title: 'JavaScript Documentation with GEC Explanation'
+author: 'Aditya Kaushik'
+date: '2025-05-23'
+abstract: A complete and corrected guide to modern JavaScript concepts, including variables, functions, loops, DOM manipulation, and the JavaScript Global Execution Context.
+banner: /static/hello-world-banner.jpg
+---
+
+## Introduction to JavaScript and ECMAScript
+
+JavaScript (JS) is a high-level programming language developed in 1995 by Brendan Eich. ECMAScript (ES) is the standardized version of JavaScript, governed by ECMA International. The two terms are often used interchangeably.
+
+Over time, JS evolved with additions like jQuery, Node.js, and modern ECMAScript standards (ES6+), making it more powerful and suitable for both client and server-side development.
+
+## Hello World in JavaScript
+
+To attach JS to HTML:
+
+```html
+<script src="myscript.js"></script>
+```
+
+Or directly embed JS:
+
+```html
+<script>
+  console.log('Hello, World!');
+</script>
+```
+
+## Comments in JavaScript
+
+```js
+// Single-line comment
+/* Multi-line
+   comment */
+```
+
+## Variables and Declarations
+
+```js
+var name = 'Aditya';
+let age = 26;
+const PI = 3.14;
+```
+
+- `var`: Function-scoped, can be redeclared
+- `let`: Block-scoped, cannot be redeclared
+- `const`: Block-scoped, immutable after declaration
+
+## Naming Rules & Best Practices
+
+- Use camelCase.
+- Avoid reserved keywords.
+- Be descriptive and consistent.
+
+## Data Types
+
+- **Primitive**: string, number, boolean, null, undefined, bigint, symbol
+- **Reference**: object, array, function
+
+## Type Checking
+
+```js
+let x = 42;
+console.log(typeof x); // "number"
+```
+
+## String Methods
+
+```js
+const str = ' Hello, JS! ';
+str.trim(); // "Hello, JS!"
+str.toUpperCase(); // " HELLO, JS! "
+str.toLowerCase(); // " hello, js! "
+str.slice(0, 5); // " Hell"
+```
+
+## String Concatenation & Template Literals
+
+```js
+let name = 'John';
+console.log('Hello ' + name);
+console.log(`Hello ${name}`);
+```
+
+## Null, Undefined, and BigInt
+
+```js
+let a;
+console.log(a); // undefined
+
+let b = null;
+console.log(b); // null
+
+let big = BigInt(12345678901234567890);
+```
+
+## Comparison & Booleans
+
+```js
+console.log(7 == '7'); // true
+console.log(7 === '7'); // false
+```
+
+## Conditional Statements
+
+```js
+if (x > 0) {
+  console.log('Positive');
+} else if (x < 0) {
+  console.log('Negative');
+} else {
+  console.log('Zero');
+}
+```
+
+### Ternary Operator
+
+```js
+let result = x > 0 ? 'Positive' : 'Non-positive';
+```
+
+### Logical Operators
+
+```js
+if (age >= 18 && hasLicense) {...}
+if (email || phone) {...}
+```
+
+## Loops
+
+### While
+
+```js
+while (i < 5) {...}
+```
+
+### For
+
+```js
+for (let i = 0; i < 5; i++) {...}
+```
+
+### Do-While
+
+```js
+do {...} while (condition);
+```
+
+### Break and Continue
+
+```js
+for (let i = 0; i < 10; i++) {
+  if (i === 5) break;
+  if (i % 2 === 0) continue;
+  console.log(i);
+}
+```
+
+## Functions
+
+### Declaration
+
+```js
+function greet(name) {
+  return `Hello ${name}`;
+}
+```
+
+### Expression
+
+```js
+const greet = function(name) {...};
+```
+
+### Arrow Function
+
+```js
+const add = (a, b) => a + b;
+```
+
+### Nested & Returning Functions (Closures)
+
+```js
+function outer() {
+  let msg = 'Hi';
+  return function inner() {
+    console.log(msg);
+  };
+}
+```
+
+## Global Execution Context (GEC)
+
+When JS code runs, it creates a **Global Execution Context** which is divided into two phases:
+
+### 1. Creation Phase
+
+- Memory is allocated for variables and functions.
+- Variables are initialized as `undefined`.
+- Function declarations are hoisted.
+
+### 2. Execution Phase
+
+- Code runs line-by-line.
+- Variables are assigned values.
+- Functions are invoked and their local execution contexts are created.
+
+This process is what enables **hoisting** and the call stack in JavaScript.
+
+```js
+greet();
+function greet() {
+  console.log('Hello from GEC');
+}
+```
+
+## Arrays
+
+```js
+const fruits = ['apple', 'banana'];
+fruits.push('grape');
+```
+
+### Destructuring
+
+```js
+const [a, b] = fruits;
+```
+
+## Objects
+
+```js
+const person = { name: 'Alice', age: 30 };
+const { name } = person;
+```
+
+## DOM Manipulation
+
+### getElementById
+
+```js
+document.getElementById('id');
+```
+
+### querySelector
+
+```js
+document.querySelector('.class');
+```
+
+### querySelectorAll
+
+```js
+document.querySelectorAll('.class');
+```
+
+### getElementsByClassName
+
+```js
+document.getElementsByClassName('class');
+```
+
+### Modifying Text and Style
+
+```js
+element.textContent = 'new text';
+element.style.color = 'blue';
+```
+
+### Attributes
+
+```js
+element.getAttribute('data-info');
+element.setAttribute('data-info', 'new value');
+```
+
+---
+
+This documentation gives you a solid foundation in JavaScript, with correct grammar and updated practices, including how JavaScript executes code using the Global Execution Context (GEC).

@@ -1,0 +1,98 @@
+---
+title: 'CSS Documentation Guide'
+author: 'Aditya Kaushik'
+date: '2025-05-23'
+abstract: A comprehensive guide to understanding and using CSS (Cascading Style Sheets) including syntax, selectors, colors, backgrounds, and layout.
+banner: /static/hello-world-banner.jpg
+---
+
+## Introduction to CSS
+
+CSS (Cascading Style Sheets) is used to control the style and layout of web documents. It allows developers to separate content from design and improve maintainability, flexibility, and user experience.
+
+## Syntax
+
+```css
+selector {
+  property: value;
+}
+```
+
+## Selectors
+
+- Universal: `* {}`
+- Element: `p {}`
+- ID: `#id {}`
+- Class: `.class {}`
+- Descendant: `#container .box {}`
+- Child: `#container > .box {}`
+- General Sibling: `h2 ~ p {}`
+- Adjacent Sibling: `p + p {}`
+- Attribute: `input[type="text"] {}`
+
+## Color
+
+- Named: `red`, `blue`
+- RGB: `rgb(255, 0, 0)`
+- RGBA: `rgba(255, 0, 0, 0.5)`
+- HEX: `#ff0000`
+- HSL: `hsl(0, 100%, 50%)`
+- HSLA: `hsla(0, 100%, 50%, 0.5)`
+
+## Background
+
+```css
+background-color: lightblue;
+background-image: url('img.jpg');
+background-repeat: no-repeat;
+background-position: right top;
+background-attachment: fixed;
+background: #fff url('img.jpg') no-repeat right top;
+```
+
+## Border
+
+```css
+border-style: solid;
+border-width: 1px;
+border-color: red;
+border-radius: 5px;
+```
+
+## Box Model
+
+Includes content, padding, border, and margin.
+
+```css
+div {
+  width: 300px;
+  padding: 25px;
+  border: 1px solid red;
+  margin: 10px;
+  box-sizing: border-box;
+}
+```
+
+## Layout
+
+- `width`, `height`, `max-width`
+- `padding`, `margin`
+- `box-sizing`
+
+## Text
+
+- Alignment: `text-align`, `text-align-last`
+- Decoration: `text-decoration`, `text-decoration-color`, `text-decoration-style`
+- Transform: `text-transform`
+- Spacing: `text-indent`, `letter-spacing`, `line-height`, `word-spacing`
+- Shadow: `text-shadow`
+
+## Comments
+
+```css
+/* This is a comment */
+```
+
+---
+
+This guide includes syntax, selectors, layout techniques, and a breakdown of the CSS box model. It helps build beautiful, maintainable web designs.

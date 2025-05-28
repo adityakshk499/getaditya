@@ -1,0 +1,35 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://getaditya.netlify.app/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://getaditya.netlify.app/contact/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://getaditya.netlify.app/articles/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://getaditya.netlify.app/uses/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://getaditya.netlify.app/css-documentation</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+    <url>
+    <loc>https://getaditya.netlify.app/javascript-documentation</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+      <url>
+    <loc>https://getaditya.netlify.app/html-documentation</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+   <url>
+    <loc>https://getaditya.netlify.app/react-core-concepts-guide</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+</urlset>
