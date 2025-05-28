@@ -6,7 +6,7 @@
     "build": "npx remix vite:build",
     "dev": "node ./scripts/dev.cjs && npx remix vite:dev",
     "start": "wrangler pages dev ./build/client",
-    "postinstall": "node ./scripts/draco.cjs"
+    "prepare": "node ./scripts/draco.cjs"
   },
   "dependencies": {
     "@aws-sdk/client-ses": "^3.515.0",
