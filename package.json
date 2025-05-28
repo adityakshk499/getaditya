@@ -5,7 +5,6 @@
   "scripts": {
     "build": "npx @remix-run/dev vite:build",
     "dev": "node ./scripts/dev.cjs && npx @remix-run/dev vite:dev",
-    "start": "wrangler pages dev ./build/client",
     "prepare": "node ./scripts/draco.cjs"
   },
   "dependencies": {
